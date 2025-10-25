@@ -1,0 +1,33 @@
+{
+  "generationParameters": {
+    "generationDate": "Sat Oct 25 2025 09:47:59 GMT+0000 (Coordinated Universal Time)",
+    "generatorPlatform": "SAP Business Application Studio",
+    "serviceType": "SAP System (ABAP Cloud)",
+    "metadataFilename": "",
+    "serviceUrl": "https://7ab63f61-d9c7-4bcf-9057-beead39881c1.abap.us10.hana.ondemand.com/sap/opu/odata/sap/ZRP_UI_ALP_O2",
+    "appName": "products-alp",
+    "appTitle": "Analytical List Page",
+    "appDescription": "SAP Fiori application. Analytical List Page",
+    "appNamespace": "",
+    "ui5Theme": "sap_horizon",
+    "ui5Version": "1.136.8",
+    "enableCodeAssist": false,
+    "enableEslint": false,
+    "enableTypeScript": false,
+    "showMockDataInfo": true,
+    "generatorVersion": "1.19.3",
+    "template": "Analytical List Page V2",
+    "generatorName": "SAP Fiori Application Generator",
+    "entityRelatedConfig": [
+      {
+        "type": "Main Entity",
+        "value": "ALPMarketOrder"
+      },
+      {
+        "type": "Navigation Entity",
+        "value": "None"
+      }
+    ],
+    "launchText": "To launch the generated application, run the following from the generated application root folder:\n\n```\n    npm start\n```"
+  }
+}
