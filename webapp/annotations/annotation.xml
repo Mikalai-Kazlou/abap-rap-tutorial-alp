@@ -13,6 +13,38 @@
     </edmx:Reference>
     <edmx:DataServices>
         <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="local">
+        <Annotations Target="cds_zrp_ui_alp.ALPMarketOrderType/ProductGroupName">
+            <Annotation Term="Common.ValueList" >
+                <Record Type="Common.ValueListType">
+                    <PropertyValue Property="CollectionPath" String="ALPMarketOrder"/>
+                    <PropertyValue Property="PresentationVariantQualifier" String="FilterProdByOrdQuantity"/>
+                    <PropertyValue Property="Parameters">
+                        <Collection>
+                            <Record Type="Common.ValueListParameterInOut">
+                                <PropertyValue Property="LocalDataProperty" PropertyPath="ProductGroupName"/>
+                                <PropertyValue Property="ValueListProperty" String="ProductGroupName"/>
+                            </Record>
+                        </Collection>
+                    </PropertyValue>
+                </Record>
+            </Annotation>
+        </Annotations>
+        <Annotations Target="cds_zrp_ui_alp.ALPMarketOrderType/MarketName">
+            <Annotation Term="Common.ValueList" >
+                <Record Type="Common.ValueListType">
+                    <PropertyValue Property="CollectionPath" String="ALPMarketOrder"/>
+                    <PropertyValue Property="PresentationVariantQualifier" String="FilterCntrByGrossIncom"/>
+                    <PropertyValue Property="Parameters">
+                        <Collection>
+                            <Record Type="Common.ValueListParameterInOut">
+                                <PropertyValue Property="LocalDataProperty" PropertyPath="MarketName"/>
+                                <PropertyValue Property="ValueListProperty" String="MarketName"/>
+                            </Record>
+                        </Collection>
+                    </PropertyValue>
+                </Record>
+            </Annotation>
+        </Annotations>
         </Schema>
     </edmx:DataServices>
 </edmx:Edmx>
