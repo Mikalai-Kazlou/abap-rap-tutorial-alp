@@ -14,7 +14,7 @@
     <edmx:DataServices>
         <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="local">
         <Annotations Target="cds_zrp_ui_alp.ALPMarketOrderType/ProductGroupName">
-            <Annotation Term="Common.ValueList" >
+            <Annotation Term="Common.ValueList" Qualifier="ValueListProductGroupVisual">
                 <Record Type="Common.ValueListType">
                     <PropertyValue Property="CollectionPath" String="ALPMarketOrder"/>
                     <PropertyValue Property="PresentationVariantQualifier" String="FilterProdByOrdQuantity"/>
@@ -28,9 +28,23 @@
                     </PropertyValue>
                 </Record>
             </Annotation>
+            <Annotation Term="Common.ValueList" Qualifier="ValueListProductGroupCommon">
+                <Record Type="Common.ValueListType">
+                    <PropertyValue Property="CollectionPath" String="ALPMarketOrder"/>
+                    <PropertyValue Property="SearchSupported" Bool="true"/>
+                    <PropertyValue Property="Parameters">
+                        <Collection>
+                            <Record Type="Common.ValueListParameterInOut">
+                                <PropertyValue Property="ValueListProperty" String="ProductGroupName"/>
+                                <PropertyValue Property="LocalDataProperty" PropertyPath="ProductGroupName"/>
+                            </Record>
+                        </Collection>
+                    </PropertyValue>
+                </Record>
+            </Annotation>
         </Annotations>
         <Annotations Target="cds_zrp_ui_alp.ALPMarketOrderType/MarketName">
-            <Annotation Term="Common.ValueList" >
+            <Annotation Term="Common.ValueList" Qualifier="ValueListMarketVisual">
                 <Record Type="Common.ValueListType">
                     <PropertyValue Property="CollectionPath" String="ALPMarketOrder"/>
                     <PropertyValue Property="PresentationVariantQualifier" String="FilterCntrByGrossIncom"/>
@@ -39,6 +53,20 @@
                             <Record Type="Common.ValueListParameterInOut">
                                 <PropertyValue Property="LocalDataProperty" PropertyPath="MarketName"/>
                                 <PropertyValue Property="ValueListProperty" String="MarketName"/>
+                            </Record>
+                        </Collection>
+                    </PropertyValue>
+                </Record>
+            </Annotation>
+            <Annotation Term="Common.ValueList" Qualifier="ValueListMarketCommon">
+                <Record Type="Common.ValueListType">
+                    <PropertyValue Property="CollectionPath" String="ALPMarketOrder"/>
+                    <PropertyValue Property="SearchSupported" Bool="true"/>
+                    <PropertyValue Property="Parameters">
+                        <Collection>
+                            <Record Type="Common.ValueListParameterInOut">
+                                <PropertyValue Property="ValueListProperty" String="MarketName"/>
+                                <PropertyValue Property="LocalDataProperty" PropertyPath="MarketName"/>
                             </Record>
                         </Collection>
                     </PropertyValue>
